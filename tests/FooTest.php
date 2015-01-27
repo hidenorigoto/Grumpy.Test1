@@ -26,7 +26,7 @@ class FooTest extends PHPUnit_Framework_TestCase
         $testResults[] = $foo->bar(4);
         $testResults[] = $foo->bar(10);
 
-        $this->assertEquals($expectedResults, $testResults, 'original coder failed');
+        $this->assertEquals($expectedResults, $testResults, 'original code failed');
     }
 
     public function testChangingReturnValuesBasedOnInputModifiedOne()
@@ -50,7 +50,7 @@ class FooTest extends PHPUnit_Framework_TestCase
         $testResults[] = $foo->bar(4);
         $testResults[] = $foo->bar(10);
 
-        $this->assertEquals($expectedResults, $testResults, 'modified1 coder failed');
+        $this->assertEquals($expectedResults, $testResults, 'modified1 code failed');
     }
 
     public function testChangingReturnValuesBasedOnInputModifiedTwo()
